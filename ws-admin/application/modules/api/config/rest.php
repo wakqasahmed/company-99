@@ -202,6 +202,10 @@ $config['auth_library_function'] = '';
 // $config['auth_override_class_method']['wildcard_test_cases']['*'] = 'basic';
 $config['auth_override_class_method']['demo']['*'] = 'none';
 $config['auth_override_class_method']['brand']['*'] = 'none';
+$config['auth_override_class_method']['category']['*'] = 'none';
+$config['auth_override_class_method']['tag']['*'] = 'none';
+$config['auth_override_class_method']['color']['*'] = 'none';
+$config['auth_override_class_method']['product']['*'] = 'none';
 
 /*
 |--------------------------------------------------------------------------

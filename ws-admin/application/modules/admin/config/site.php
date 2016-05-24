@@ -50,8 +50,8 @@ $config['site'] = array(
 
 	// AdminLTE settings
 	'adminlte' => array(
-		'webmaster'	=> array('skin' => 'skin-red'),
-		'admin'		=> array('skin' => 'skin-purple'),
+		'webmaster'	=> array('skin' => 'skin-purple'),
+		'admin'		=> array('skin' => 'skin-red'),
 		'manager'	=> array('skin' => 'skin-black'),
 		'staff'		=> array('skin' => 'skin-blue')
 	),
@@ -74,6 +74,7 @@ $config['site'] = array(
 				'User Groups'	=> 'user/group',
 			)
 		),
+		/*
 		'demo' => array(
 			'name'		=> 'Demo',
 			'url'		=> 'demo',
@@ -90,12 +91,27 @@ $config['site'] = array(
 				'Item 2'			=> 'demo/item/2',
 				'Item 3'			=> 'demo/item/3',
 			)
-		),
-		'brands' => array(
+		),*/
+		'brand' => array(
 			'name'		=> 'Brands',
 			'url'		=> 'brand/',
 			'icon'		=> 'ion ion-load-b',	// use Ionicons (instead of FontAwesome)
-		),		
+		),
+		'tags' => array(
+			'name'		=> 'Tags',
+			'url'		=> 'tag/',
+			'icon'		=> 'ion ion-load-b',	// use Ionicons (instead of FontAwesome)
+		),
+		'categories' => array(
+			'name'		=> 'Categories',
+			'url'		=> 'category/',
+			'icon'		=> 'ion ion-load-b',	// use Ionicons (instead of FontAwesome)
+		),
+		'products' => array(
+			'name'		=> 'Products',
+			'url'		=> 'product/',
+			'icon'		=> 'ion ion-load-b',	// use Ionicons (instead of FontAwesome)
+		),
 		'panel' => array(
 			'name'		=> 'Admin Panel',
 			'url'		=> 'panel',
