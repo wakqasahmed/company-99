@@ -91,6 +91,11 @@ $config['site'] = array(
 				'Item 3'			=> 'demo/item/3',
 			)
 		),
+		'brands' => array(
+			'name'		=> 'Brands',
+			'url'		=> 'brand/',
+			'icon'		=> 'ion ion-load-b',	// use Ionicons (instead of FontAwesome)
+		),		
 		'panel' => array(
 			'name'		=> 'Admin Panel',
 			'url'		=> 'panel',

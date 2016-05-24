@@ -1,0 +1,1 @@
+view: brands index.php <?php if ( !empty($brand_id) ) echo "(ID = $brand_id)"; ?>
