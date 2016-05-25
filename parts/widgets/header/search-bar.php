@@ -15,6 +15,20 @@
             <ul class="categories-filter animate-dropdown">
                 <li class="dropdown">
 
+                    <a class="dropdown-toggle"  data-toggle="dropdown" href="index.php?page=category-grid">filter search</a>
+
+                    <ul class="dropdown-menu" role="menu" >
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="index.php?page=category-grid">product name</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="index.php?page=category-grid">sku</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="index.php?page=category-grid">tags</a></li>
+
+                    </ul>
+                </li>
+            </ul>
+<!--
+            <ul class="categories-filter animate-dropdown">
+                <li class="dropdown">
+
                     <a class="dropdown-toggle"  data-toggle="dropdown" href="index.php?page=category-grid">all categories</a>
 
                     <ul class="dropdown-menu" role="menu" >
@@ -26,6 +40,8 @@
                     </ul>
                 </li>
             </ul>
+-->
+
 
             <a class="search-button" href="#" ></a>    
 

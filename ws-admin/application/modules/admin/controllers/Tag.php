@@ -16,12 +16,12 @@ class Tag extends Admin_Controller {
 
 	    $crud->set_subject('Tag');
 
-        $crud->columns('text');
-        $crud->fields('text');
+        $crud->columns('tag_text');
+        $crud->fields('tag_text');
  
-        $crud->display_as('name','Tag Text');
+        $crud->display_as('tag_text','Tag Text');
 
-		$crud->required_fields('text');
+		$crud->required_fields('tag_text');
 
 		$this->render_crud();
 	}

@@ -3,7 +3,7 @@
         <div class="star-holder inline"><div class="star" data-score="4"></div></div>
         <div class="availability"><label>Availability:</label><span class="available">  in stock</span></div>
 
-        <div class="title"><a href="#">VAIO fit laptop - windows 8 SVF14322CXW</a></div>
+        <div class="title"><a href="#"><?= ''//$product_data; ?></a></div>
         <div class="brand">sony</div>
 
         <div class="social-row">

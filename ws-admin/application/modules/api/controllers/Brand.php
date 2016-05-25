@@ -71,7 +71,7 @@ class Brand extends API_Controller {
 	 */
 	public function id_get($id)
 	{
-		$query = $this->db->get_where('brands', array('id' => $id));
+		$query = $this->db->get_where('brands', array('brand_id' => $id));
 		$data = $query->row_array();
 
         if ($data)

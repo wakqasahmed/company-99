@@ -71,7 +71,7 @@ class Category extends API_Controller {
 	 */
 	public function id_get($id)
 	{
-		$query = $this->db->get_where('categories', array('id' => $id));
+		$query = $this->db->get_where('categories', array('category_id' => $id));
 		$data = $query->row_array();
 
         if ($data)

@@ -71,8 +71,42 @@ class Product extends API_Controller {
 	 */
 	public function id_get($id)
 	{
-		$query = $this->db->get_where('products', array('id' => $id));
-		$data = $query->row_array();
+		//$query = $this->db->get_where('products', array('product_id' => $id));
+		//$data = $query->row_array();
+
+		$this->db->select('
+			p.*,
+			c.category_name,
+			t.tag_text,
+			pi.image_path,
+			pi.thumb_path
+			');
+
+/*
+		$this->db->select('
+			p.*,
+			c.category_name,
+			GROUP_CONCAT(t.tag_text) as t.tag_text,
+			pi.image_path,
+			pi.thumb_path
+			');
+*/
+
+		$this->db->from('Products p');
+
+		$this->db->join('Products_Categories pc', 'p.product_id = pc.product_id','LEFT');
+		$this->db->join('Categories c', 'pc.category_id = c.category_id','LEFT');
+		
+		$this->db->join('Products_Tags pt', 'p.product_id = pt.product_id','LEFT');
+		$this->db->join('Tags t', 'pt.tag_id = t.tag_id','LEFT');
+
+		$this->db->join('Product_Images pi', 'p.product_id = pi.product_id','LEFT');
+
+		$this->db->where('p.product_id =', $id);
+
+		$this->db->group_by("p.product_id"); 
+
+		$data = $this->db->get()->result_array();		
 
         if ($data)
         {

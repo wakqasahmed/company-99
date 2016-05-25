@@ -16,13 +16,13 @@ class Brand extends Admin_Controller {
 
 	    $crud->set_subject('Brand');
 
-        $crud->columns('name','description');
-        $crud->fields('name','description');
+        $crud->columns('brand_name','brand_description');
+        $crud->fields('brand_name','brand_description');
  
-        $crud->display_as('name','Brand Name');
-        $crud->display_as('description','Brand Description');
+        $crud->display_as('brand_name','Brand Name');
+        $crud->display_as('brand_description','Brand Description');
 
-		$crud->required_fields('name');
+		$crud->required_fields('brand_name');
 
 		$this->render_crud();
 	}

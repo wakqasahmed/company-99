@@ -206,6 +206,7 @@ $config['auth_override_class_method']['category']['*'] = 'none';
 $config['auth_override_class_method']['tag']['*'] = 'none';
 $config['auth_override_class_method']['color']['*'] = 'none';
 $config['auth_override_class_method']['product']['*'] = 'none';
+$config['auth_override_class_method']['search']['*'] = 'none';
 
 /*
 |--------------------------------------------------------------------------
